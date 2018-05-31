@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="salesrule_rule_save_after">
+        <observer name="interteleco_smsbox_observer_new_coupon" instance="Interteleco\Smsbox\Observer\NewCoupon"/>
+    </event>
+    <event name="admin_system_config_changed_section_interteleco_smsbox_configuration">
+        <observer name="interteleco_smsbox_observer_configuration" instance="Interteleco\Smsbox\Observer\ChangedConfiguration"/>
+    </event>
+</config>
